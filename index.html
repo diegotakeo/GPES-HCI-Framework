@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+
+		
+		<meta name="description" content="">
+		<meta name="author" content="GPES - Grupo de Pesquisa em Engenharia de Software da FATEC Taquaritinga">
+		<link rel="icon" href="img/favicon.ico">
+
+		<title>GPES - Human-Computer Interaction Framework</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<link href="css/cover.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+  
+	<!-- MAIN CSS & JS -->
+	<script src="https://use.fontawesome.com/ad03a8b645.js"></script>
+
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link href="css/queries.css" rel="stylesheet"> <!-- fancy boxy menu fix -->
+	<script src="script.js"></script>
+	
+	
+  </head>
+  <body>
+    <div class="container"> <!-- centers everything -->
+      <div class="row in-container"> <!-- gives vertical align -->
+		
+			<!-------------------------------------------->
+			<!-- HEADER -->
+			
+			<div class="header" style="height:100px">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 col-sm-12 col-xs-12">
+			  <div class="inner row">
+			
+				<!-- LOGO GPES -->
+				<div class="col-md-6 col-sm-7 col-xs-10">
+					<img src="img/lgpesv_3_bold.png" class="logo-gpes img-responsive masthead-brand" alt="logo do GPES" onclick="location.href = &quot;index.html&quot;">
+				</div>
+				
+				
+				<!-- NAVIGATION -->
+				<div class="nav-wrapper col-md-6 col-sm-5 col-xs-2">
+					<div class="col-md-6 col-sm-6 col-xs-6 text-left"></div>
+					
+					<a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#">
+						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+							<span></span>
+						</div>
+					</a>
+				</div>
+				
+			  </div>
+			</div>
+			<div class="col-md-2"></div>
+			</div>
+			<div class="clearfix" style="margin-bottom:20px;"></div>
+			<!-------------------------------------------->
+			<!-- MAIN CONTENT -->
+			<div class="col-md-2"></div>
+			<div class="inner cover col-md-8 col-sm-12 col-xs-12 ajax-box vertical-align" id="main_content">
+			
+		
+				<?php 
+				//	if (isset($_GET['_escaped_fragment_']))
+				//		include('2-ajax.php'); 
+				//	else 
+				//		include('archive/_home.php');
+				?>	
+			</div> <!-- END <div id="main_content"> -->
+			<div class="col-md-2"></div>
+		  
+		  
+		  
+			
+		  
+      </div> <!-- end wrapper-inner -->
+    </div> <!-- end wrapper -->
+		
+		
+	
+	<!-- FOOTER -->
+	<div style="text-align:center; margin-top:-50px;">
+		<p class="footer_txt">All rights reserved @ 2017 <a href="http://gpes.fatectq.edu.br/">GPES</a></p>
+		<p> <a href="#" id="go_portuguese">português</a> - <a href="#" id="go_english">english</a></p>
+	</div>
+	
+	<!-- NAVIGATION LINKS -->
+	<div class="overlay overlay-boxify main_nav">
+		<nav>
+			<ul>
+				<li><a href="#!_home.php" id="home" data-to="main_content"><i class="fa fa-home"></i><p>HOME</p></a></li>
+				<li><a href="#!_doc.php" id="doc" data-to="main_content"><i class="fa fa-paperclip"></i><p>DOCUMENTATION</p></a></li>
+			</ul>
+			<ul>
+				<li><a href="#!_archive.php" id="archive" data-to="main_content"><i class="fa fa-folder-open-o"></i><p>ARCHIVE</p></a></li>
+				<li><a href="#!_about.php" 	 id="about" data-to="main_content"><i class="fa fa-address-card"></i><p>ABOUT US</p></a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- BLACK OVERLAY FOR OTHER STUFF -->
+	<div class="modal_window" style="position:absolute; background:rgba(0,0,0,0.9); width:100%; height:100%; top:0; display:none;">
+		<img src="img/b1.png" style="max-height:95%; max-width:50%; margin:15px 0; display:none;">
+		
+		<div class="modal_box col-md-3 col-sm-12" style="background:white; padding:30px; top:50%; left:50%; margin:-150px 0 0 -150px; "> 
+			<span class="modal_text"></span>
+			<div class="quit" style="position:absolute; right:0; top:-35px; font-size:28px; color:#999; cursor:pointer;">X</div>
+		</div>
+	</div>
+	
+</body></html>

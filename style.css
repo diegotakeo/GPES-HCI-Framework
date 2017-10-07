@@ -1,0 +1,299 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+
+html, body, .container, .in-container {height: 100%} /* allows div.vertical-align to be height:70% */
+
+html, body {font-family: sans-serif!important;}
+html, body, div, 
+span, h1, h2, p, a, 
+img, input, form, label{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}	
+	
+*, *:after, *:before { 
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 	
+}
+
+a {outline: none; text-decoration: none;}
+a:selected {outline: none; text-decoration:none;}
+a:link  {text-decoration:none;}  
+	
+
+	
+img,div {border:none;}
+textarea {overflow:hidden; min-height:110px;}
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* BOX-SHADOW */
+/*.bloco_pergunta {
+/*	box-shadow: 		3px 3px 0px #666, 6px 6px 0px #666;
+/*	-moz-box-shadow: 	3px 3px 0px #666, 6px 6px 0px #666;
+/*	-webkit-box-shadow: 3px 3px 0px #666, 6px 6px 0px #666;
+/*}*/
+
+.modal_box {
+	box-shadow: 		6px 6px 0px #555, 12px 12px 0px #444;
+	-moz-box-shadow: 	6px 6px 0px #555, 12px 12px 0px #444;
+	-webkit-box-shadow: 6px 6px 0px #555, 12px 12px 0px #444;
+}
+.overlay ul li {
+	box-shadow: 		4px 4px 0px #9E2F2F, 8px 8px 0px #6E2222;
+	-moz-box-shadow: 	4px 4px 0px #9E2F2F, 8px 8px 0px #6E2222;
+	-webkit-box-shadow: 4px 4px 0px #9E2F2F, 8px 8px 0px #6E2222;
+}
+
+
+.social_buttons, social_buttons:active {
+	box-shadow: 		3px 3px 0px #666, 6px 6px 0px #666;
+	-moz-box-shadow: 	3px 3px 0px #666, 6px 6px 0px #666;
+	-webkit-box-shadow: 3px 3px 0px #666, 6px 6px 0px #666;
+}		
+
+/*.bloco_pergunta {
+/*	border:1px solid #666;
+/*	background: url(img/noise_b.png);
+/*	
+/*	margin-bottom:80px;
+/*	position:relative; /* important to vertically align stuff */
+/*	padding: 30px 0 0 0;
+/*	display:none;
+/*}*/
+	
+
+	
+.options {cursor: pointer; border:1px solid #666; margin-top:20px; padding:30px 0; min-height:75px;}
+.options:hover {background-color: rgba(10,10,10, 0.05);}
+
+.return {position: absolute; right:0; top:-20px;}
+
+
+.logo-gpes {
+    cursor: pointer;
+    height: auto;
+	display:inline;
+	}
+	
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+	flex-direction:row;
+	flex: 1;
+	height:70%; /* recent stuff: 70vh */
+}
+
+
+.footer {position:fixed; bottom: 0;}
+
+/* ---------------------- SOCIAL LOGIN BUTTONS ------------------------*/
+.social_buttons { margin:0 auto; padding:20px 20px 20px 80px; color:#fff; position:relative; font-size:15px;}
+.social_buttons:before {font-size:35px; left:0;top:0; width:62px; height:62px; padding:13px; border-right:1px dashed #999;}
+
+.social_buttons.col-md-8, .social_buttons.col-sm-8 {max-width:395px;}
+
+.gpes_color {background-color:#f64747; margin-bottom:20px;}
+.gpes_color:active {background-color: #f64747!important; color:#fff!important;}
+
+.pergunta {margin-bottom:20px;}
+
+.query_div {display:none;}
+.query_div p {font-size:20pt;}
+	
+	
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 30px 5px 16px 0px;
+    cursor: pointer;
+}
+.nav-toggle:focus {
+    outline: none;
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background: #111;
+    cursor: pointer;
+}
+.nav-toggle span:before {
+    top: -10px
+}
+.nav-toggle span:after {
+    bottom: -10px
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+.navicon {
+    position: relative;
+    height: 26px;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
+}
+
+/* ==========================================================================
+Nav Overlay
+========================================================================== */
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.8);
+}
+
+/* Menu style */
+.overlay nav {
+    position: relative;
+    top: 50%;
+    height: 60%;
+    text-align: center;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.overlay ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.overlay ul li:last-child {
+    margin-right: 0px
+}
+.overlay ul li i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.overlay ul li a {
+    display: block;
+    padding: 50px 0;
+    min-width: 190px;
+    border-radius: 3px;
+    background-color: #F64747;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+    background-color: #F65757;	
+}
+
+/* Effects */
+.overlay-boxify {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-boxify.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-boxify nav ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-boxify.open nav ul:first-child li:first-child {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay-boxify.open nav ul li {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ANIMATED BLINKING CURSOR (TYPED.JS) */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+	font-size:30pt;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+

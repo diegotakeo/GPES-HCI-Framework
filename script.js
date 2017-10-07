@@ -38,9 +38,9 @@ $(function(){
 		
 		// AJAX NAVIGATION
 		var cache_ = {
-			//'home.php' : $('div#home')
+			//'home.html' : $('div#home')
 		};
-		$(document).on('click','a[href^="#"][href*=".php"]', function(e){
+		$(document).on('click','a[href^="#"][href*=".html"]', function(e){
 			e.preventDefault();
 			var group = $(this).attr('data-to');
 			var file  = $(this).attr('href').replace('#','').replace('!','');
